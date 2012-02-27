@@ -1,1 +1,76 @@
-acpmasquerade
+<html>
+<head>
+<title>
+acpmasquerade - powered by softwargasm
+</title>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'/> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<style type="text/css">
+body{
+color:black;
+overflow:hidden;
+font-family:"Droid Serif", Serif;
+margin:0 auto;
+padding:0 auto;
+height:100%;
+width:100%;
+text-align:center;
+}
+.grid{
+background:url(http://4.bp.blogspot.com/-ehao6cxRElc/TbLN_EK9wTI/AAAAAAAABuI/rQoWfEmh_CI/s1600/workbench_background.png) repeat top left fixed;
+}
+</style>
+<body class="grid">
+<style type="text/css">
+	#outercontainer { position:relative ; height:100%; width:100%;}
+	#innercontainer { position:absolute; top:50%; height:10em; margin-top:-5em; width:100%;text-align:center;}
+	a{text-decoration:none;font-size:20px;color:#F30C00;font-weight:bold;}
+	img{border:5px solid #DDEEFE;padding:10px;}
+
+	.rotate{		
+		-webkit-transition: 2s all;
+		-moz-transition: 2s all;
+		-ms-transition: 2s all;
+		-o-transition: 2s all;
+	}
+
+	.rotate:hover {
+		-webkit-transform: rotate(450deg);
+		-moz-transform: rotate(450deg);
+		-ms-transform: rotate(450deg);
+		-o-transform: rotate(450deg);
+	}
+	
+	.morerotate {
+		-webkit-transform: rotate(14500deg);
+		-moz-transform: rotate(14500deg);
+		-ms-transform: rotate(14500deg);
+		-o-transform: rotate(14500deg);
+		-webkit-transition: 100s all;
+                -moz-transition: 100s all;
+                -ms-transition: 100s all;
+                -o-transition: 100s all;
+	
+	}
+</style>
+
+<div id="outercontainer">
+	<div id="innercontainer">
+		<div class="rotate">
+		<img src="http://3.bp.blogspot.com/_1_FTrNMp4QY/TSC-CNukTCI/AAAAAAAABqw/Iyl6jpRmY4s/S150/the_dhruba_adhikari-coloured_head.png" height="139" width="150" class="grid">
+		</div>
+		<a href="http://blog.acpmasquerade.com">
+		&laquo;	the acp blog &raquo;</a>
+	</div>
+</div>
+<script type="text/javascript">
+	$("#innercontainer a").click(function(){
+		$("div.rotate").addClass("morerotate");
+		setTimeout(function(){
+			location.href = "http://blog.acpmasquerade.com";
+		}, 4000);
+		return false;
+	});
+</script>
+</body>
+</html>
